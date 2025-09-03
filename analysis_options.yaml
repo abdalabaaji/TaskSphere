@@ -1,0 +1,31 @@
+include: package:flutter_lints/flutter.yaml
+
+# Additional lint rules and analysis options for TaskSphere
+analyzer:
+  exclude:
+    - "**/*.g.dart"
+    - "**/*.freezed.dart"
+  
+linter:
+  rules:
+    # Style rules
+    - prefer_single_quotes
+    - require_trailing_commas
+    - sort_constructors_first
+    - sort_unnamed_constructors_first
+    
+    # Design rules
+    - prefer_const_constructors
+    - prefer_const_declarations
+    - prefer_const_literals_to_create_immutables
+    
+    # Documentation rules
+    - public_member_api_docs
+    
+    # Error prone rules
+    - avoid_print
+    - avoid_web_libraries_in_flutter
+    - no_logic_in_create_state
+    
+    # Pub rules
+    - sort_pub_dependencies
